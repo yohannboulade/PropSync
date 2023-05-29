@@ -5,12 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent implements OnInit{
   title = 'PropSync';
   sidebarActive!: boolean;
 
   ngOnInit() {
-    this.sidebarActive = true;
+    
+    if (window.innerWidth < 1024) {
+      this.sidebarActive = false;
+    }else{
+      this.sidebarActive = true;
+    }
   }
 
   onDeploy() {
@@ -18,9 +24,7 @@ export class AppComponent implements OnInit{
       this.sidebarActive = false;
     }else{
       this.sidebarActive = true;
-    }
-    console.log(this.sidebarActive);
-    
+    }    
   }
 }
 
