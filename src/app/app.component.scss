@@ -1,0 +1,27 @@
+div.app{
+    display: flex;
+    width: 100vw;
+
+    .sidebarr{
+        background-color: hsl(0, 0%, 98%);
+        max-width: 0vw;
+        width: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+        border-right: solid 2px hsl(0, 0%, 95%);
+        height: 100vh;
+        #deploy{
+            position: absolute;
+            top: 1vh;
+            left: 1vw;
+        }
+    }
+    .active{
+        flex: 1;
+        max-width: 100vw !important;
+        width: auto !important;
+    }
+    .main{
+        flex: 5;
+    }
+}

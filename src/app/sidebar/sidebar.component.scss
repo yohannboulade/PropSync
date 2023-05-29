@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    a {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.25s;
+    }
+    a:hover{
+        color: rgb(47, 101, 250);
+    }
+}
