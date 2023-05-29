@@ -1,7 +1,6 @@
 div.app{
     display: flex;
     width: 100vw;
-
     .sidebarr{
         background-color: hsl(0, 0%, 98%);
         max-width: 0vw;
@@ -10,10 +9,13 @@ div.app{
         transition: 0.5s;
         border-right: solid 2px hsl(0, 0%, 95%);
         height: 100vh;
+        padding-top: 5rem;
         #deploy{
             position: absolute;
-            top: 1vh;
-            left: 1vw;
+            height: 50px;
+            width: 50px;
+            top : 0;
+            margin: 1rem 2rem;
         }
     }
     .active{
